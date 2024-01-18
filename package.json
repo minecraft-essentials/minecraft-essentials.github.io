@@ -11,7 +11,7 @@
     "fmt": "bunx @biomejs/biome format . --write",
     "lint": "bunx @biomejs/biome lint . --apply",
     "check": "bunx @biomejs/biome check --apply-unsafe .",
-    "postinstall": "husky install"
+    "postinstall": "bunx husky install"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
