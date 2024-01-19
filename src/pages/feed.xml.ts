@@ -10,7 +10,7 @@ export async function get(context: ContextType) {
 		(a, b) =>
 			new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 	);
-
+ 
 	return rss({
 		title: "Minecraft-Esssentails Blog",
 		description: "A blog about the Library/Package minecraft-esssentails",
@@ -23,4 +23,4 @@ export async function get(context: ContextType) {
 		})),
 		customData: "<language>en-us</language>",
 	});
-}
+ }
