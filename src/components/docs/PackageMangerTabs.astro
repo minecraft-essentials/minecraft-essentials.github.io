@@ -1,0 +1,22 @@
+---
+import Tabs from './Tabs.astro';
+import { TabItem } from '@astrojs/starlight/components';
+---
+
+<Tabs group="package-managers">
+	<TabItem label="Cargo">
+		<slot name="cargo" />
+	</TabItem>
+	<TabItem label="Bun">
+		<slot name="bun" />
+	</TabItem>
+	<TabItem label="Yarn">
+		<slot name="yarn" />
+	</TabItem>
+	<TabItem label="pnpm">
+		<slot name="pnpm" />
+	</TabItem>
+	<TabItem label="npm">
+		<slot name="npm" />
+	</TabItem>
+</Tabs>
