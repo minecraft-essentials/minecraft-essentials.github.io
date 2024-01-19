@@ -45,18 +45,48 @@ site: 'https://minecraft-essentials.pages.github.io/',
       sidebar: [
         {
           label: "Infomation",
-          autogenerate: {
-            directory: "infomation",
-          },
+          items: [
+            {
+              label: "Introduction",
+              link: "/infomation/intro/"
+            },
+            {
+              label: "Contribute",
+              link: "/infomation/contribute/",
+              badge: {
+                text: "Experiemental",
+                variant: "caution"
+              },
+            }
+          ]
         },
         {
-          label: "NPM Documentation",
-          autogenerate: {
-            directory: "npm",
-          },
+          label: "Javascript/Typescript",
+          items: [
+            {
+              label: "Installation",
+              link: "/npm/installation/"
+            },
+            {
+              label: "Oauth",
+              link: "/npm/oauth/",
+              badge: {
+                text: "Recomended!",
+                variant: "success",
+              }
+            },
+            {
+              label: "Device Code",
+              link: "/npm/device_code/",
+              badge: {
+                text: "Secure!",
+                variant: "note",
+              }
+            }
+          ]
         },
         {
-          label: "Rust Documenation",
+          label: "Docs.rs",
           items: [
             {
               label: "Getting Started",
@@ -65,15 +95,23 @@ site: 'https://minecraft-essentials.pages.github.io/',
             {
               label: "Oauth",
               link: "https://docs.rs/minecraft-essentials/oauth",
+              badge: {
+                text: "Recomended!",
+                variant: "success",
+              }
             },
           ],
         },
         {
-          label: "Featured Clients",
+          label: "Minecraft Clients",
           items: [
             {
               label: "TeaClient",
               link: "https://teaclient.net",
+              badge: {
+                text: "Featured!",
+                variant: "default",
+              }
             },
             {
               label: "OpusClient",
@@ -82,6 +120,9 @@ site: 'https://minecraft-essentials.pages.github.io/',
           ],
         },
       ],
+      components: {
+        SiteTitle: "./src/components/starlight/SiteTitle.astro",
+      }
     }),
   ],
 });
