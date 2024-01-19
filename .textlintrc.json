@@ -1,7 +1,7 @@
 {
-  "plugins": {},
-  "filters": {},
-  "rules": {
-    "no-todo": true
-  }
+	"plugins": {},
+	"filters": {},
+	"rules": {
+		"no-todo": true
+	}
 }
