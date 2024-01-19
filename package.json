@@ -29,9 +29,6 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
-  "overrides": {
-    "astro-expressive-code": "latest"
-  },
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
     "@commitlint/cli": "^18.4.4",
