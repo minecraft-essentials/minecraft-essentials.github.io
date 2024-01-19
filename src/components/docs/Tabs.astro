@@ -61,7 +61,6 @@ export interface Props {
 			// Mark all tabs as unselected and hide all tab panels.
 			this.tabs.forEach((tab) => {
 				tab.removeAttribute('aria-selected');
-				tab.setAttribute('tabindex', '-1');
 			});
 			this.panels.forEach((oldPanel) => {
 				oldPanel.hidden = true;
