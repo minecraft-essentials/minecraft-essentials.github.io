@@ -1,7 +1,7 @@
 {
   "name": "website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -35,6 +35,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "textlint": "^13.4.1",
     "textlint-rule-no-todo": "^2.0.1"
   }
