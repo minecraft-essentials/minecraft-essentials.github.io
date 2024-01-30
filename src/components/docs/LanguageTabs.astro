@@ -1,0 +1,17 @@
+---
+import Tabs from './Tabs.astro';
+import { TabItem } from '@astrojs/starlight/components';
+---
+
+<Tabs group="languages">
+    <TabItem label='Rust'>
+        For extended documentation check <a href="/docsrs">docs.rs</a>
+        <slot name="rs" />
+    </TabItem>
+    <TabItem label='TypeScript'>
+        <slot name="ts" />
+    </TabItem>
+    <TabItem label='JavaScript'>
+        <slot name="js" />
+    </TabItem>
+</Tabs>

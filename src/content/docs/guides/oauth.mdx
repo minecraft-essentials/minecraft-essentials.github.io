@@ -1,0 +1,51 @@
+---
+title: OAuth
+description: Guide on the Oauth 2.0 method
+---
+
+import LanguageTabs from "@src/components/docs/LanguageTabs.astro";
+
+:::caution
+**This is subjected to CHANGE at Anytime as this is Experimental**
+:::
+
+This guide will teach you how to use the oauth
+
+### Examples:
+
+<LanguageTabs>
+<Fragment slot="ts">
+```ts
+import * as minecraft_essentials from 'minecraft_essentials'; // Assuming minecraft_essentials is a module
+
+let clientId = "111231209837123098712";
+let oauth = new minecraft_essentials.Oauth(clientId);
+console.log(`Login here: ${oauth.url()}`);
+let oauthInfo = await oauth.launch();
+
+````
+</Fragment>
+
+
+<Fragment slot="rs">
+```rs
+use minecraft_essentials::*;
+let client_id = "111231209837123098712";
+let oauth = Oauth::new(client_id);
+println!("Login here: {}", oauth.url());
+let oauth_info = oauth.launch().await?;
+````
+
+</Fragment>
+
+</LanguageTabs>
+###
+
+:::note
+This is blank and is waiting for contributions. Get involved on [github](/github)
+
+Here is some resources to get you startedL
+
+- Based on https://github.com/minecraft-essentials/minecraft-essentials/main/src/oauth.rs
+
+:::

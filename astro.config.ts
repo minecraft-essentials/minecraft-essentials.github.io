@@ -1,87 +1,141 @@
 import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
-import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://minecraft-essentials.pages.github.io/",
+	redirects: {
+		"/docsrs": "https://docs.rs/minecraft-essentials/",
+		"/cratesio": "https://crates.io/minecraft-essentials/",
+		"/github": "https://github.com/minecraft-essentials",
+	},
 
-site: 'https://minecraft-essentials.pages.github.io/',
-
-
-
-
-
-
-  integrations: [
-    react(),
-    tailwind({ applyBaseStyles: false }),
-    starlight({
-      title: "Minecraft-Essentials",
-      customCss: ["./src/styles/tailwind.css"],
-      social: {
-        github: "https://github.com/minecraft-essentials/minecraft-essentials",
-      },
-      defaultLocale: "root",
-      locales: {
-        root: {
-          label: "English",
-          lang: "en",
-        },
-        es: {
-          label: "Español",
-        },
-        zh: {
-          label: "中文",
-        },
-        hi: {
-          label: "हिन्दी",
-        },
-        ar: {
-          label: "العربية",
-        },
-      },
-      sidebar: [
-        {
-          label: "Infomation",
-          autogenerate: {
-            directory: "infomation",
-          },
-        },
-        {
-          label: "NPM Documentation",
-          autogenerate: {
-            directory: "npm",
-          },
-        },
-        {
-          label: "Rust Documenation",
-          items: [
-            {
-              label: "Getting Started",
-              link: "https://docs.rs/minecraft-essentials/",
-            },
-            {
-              label: "Oauth",
-              link: "https://docs.rs/minecraft-essentials/oauth",
-            },
-          ],
-        },
-        {
-          label: "Featured Clients",
-          items: [
-            {
-              label: "TeaClient",
-              link: "https://teaclient.net",
-            },
-            {
-              label: "OpusClient",
-              link: "https://opusclient.com",
-            },
-          ],
-        },
-      ],
-    }),
-  ],
+	integrations: [
+		react(),
+		tailwind({
+			applyBaseStyles: false,
+		}),
+		starlight({
+			title: "Minecraft-Essentials",
+			customCss: ["./src/styles/tailwind.css"],
+			social: {
+				github: "https://github.com/minecraft-essentials/minecraft-essentials",
+			},
+			defaultLocale: "root",
+			locales: {
+				root: {
+					label: "English",
+					lang: "en",
+				},
+				es: {
+					label: "Español",
+				},
+				zh: {
+					label: "中文",
+				},
+				hi: {
+					label: "हिन्दी",
+				},
+				ar: {
+					label: "العربية",
+				},
+			},
+			sidebar: [
+				{
+					label: "Infomation",
+					items: [
+						{
+							label: "Introduction",
+							link: "/infomation/intro/",
+						},
+						{
+							label: "Contribute",
+							link: "/infomation/contribute/",
+							badge: {
+								text: "Experiemental",
+								variant: "caution",
+							},
+						},
+					],
+				},
+				{
+					label: "Documentation",
+					items: [
+						{
+							label: "Installation",
+							link: "/guides/install/",
+						},
+						{
+							label: "OAuth",
+							link: "/guides/oauth/",
+							badge: {
+								text: "Recomended!",
+								variant: "success",
+							},
+						},
+						{
+							label: "DeviceCode",
+							link: "/guides/device_code/",
+							badge: {
+								text: "Secure!",
+								variant: "note",
+							},
+						},
+						{
+							label: "Launching",
+							link: "/guides/launching",
+							badge: {
+								text: "Experimental",
+								variant: "caution",
+							},
+						},
+					],
+				},
+				{
+					label: "Resources",
+					items: [
+						{
+							label: "Docs.rs",
+							link: "https://docs.rs/minecraft-essentials/",
+						},
+						{
+							label: "Crates.io",
+							link: "https://crates.io/minecraft-essentials/",
+						},
+					],
+				},
+				{
+					label: "Minecraft Clients",
+					items: [
+						{
+							label: "TeaClient",
+							link: "https://teaclient.net",
+							badge: {
+								text: "Featured!",
+								variant: "default",
+							},
+						},
+						{
+							label: "OpusClient",
+							link: "https://opusclient.com",
+						},
+					],
+				},
+			],
+			components: {
+				SiteTitle: "./src/components/starlight/SiteTitle.astro",
+			},
+		}),
+	],
+	compressHTML: true,
+	cacheDir: "./src",
+	vite: {
+		resolve: {
+			alias: {
+				"@src": "/src",
+			},
+		},
+	},
 });

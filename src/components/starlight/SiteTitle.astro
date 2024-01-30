@@ -1,0 +1,43 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import AstrolightSiteTitle from "@astrojs/starlight/components/SiteTitle.astro";
+
+const items = [
+  { name: "Docs", href: "/infomation/intro" },
+  { name: "Blog", href: "/blog" },
+];
+
+function pathsMatch(pathA: string, pathB: string): boolean {
+  return pathB.includes(pathA);
+}
+---
+
+<div class="flex box-border gap-6 items-center">
+  <AstrolightSiteTitle {...Astro.props} />
+
+  <div class="h-[2rem] before:block separator"></div>
+
+  <div class="flex gap-6">
+    {
+      items.map((items) => (
+        <a
+          href={items.href}
+          aria-current={
+            pathsMatch(encodeURI(items.href), Astro.url.pathname) && "page"
+          }
+          class="no-underline links dark:text-accent-200 text-accent-600"
+        >
+          <span class="gap-6">{items.name}</span>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .separator {
+    content: "";
+    border-inline-end: 1px solid var(--sl-color-gray-5);
+    align-items: center;
+  }
+</style>
