@@ -65,10 +65,10 @@ export default defineConfig({
 					items: [
 						{
 							label: "Installation",
-							link: "/guides/installation/",
+							link: "/guides/install/",
 						},
 						{
-							label: "Oauth",
+							label: "OAuth",
 							link: "/guides/oauth/",
 							badge: {
 								text: "Recomended!",
@@ -76,11 +76,19 @@ export default defineConfig({
 							},
 						},
 						{
-							label: "Device Code",
+							label: "DeviceCode",
 							link: "/guides/device_code/",
 							badge: {
 								text: "Secure!",
 								variant: "note",
+							},
+						},
+						{
+							label: "Launching",
+							link: "/guides/launching",
+							badge: {
+								text: "Experimental",
+								variant: "caution",
 							},
 						},
 					],
