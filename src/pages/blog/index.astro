@@ -1,10 +1,8 @@
 ---
-
-import StarlightSplash  from "../../layouts/StarlightSplash.astro"
 import "../../styles/tailwind.css"
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 ---
 
-
-<StarlightSplash title="blog" description="Minecraft-essentials offical blog!" slug="">
-list here
-</StarlightSplash>
+<StarlightPage>
+    <slot />
+</StarlightPage>
