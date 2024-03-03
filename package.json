@@ -10,9 +10,8 @@
     "astro": "astro --bun ",
     "fmt": "biome format . --write",
     "lint": "biome lint . --apply",
-    "commitlint": "commitlint",
-    "check": "biome check --apply-unsafe .",
-    "postinstall": "bunx husky install"
+    "check": "biome check .",
+    "postinstall": "bunx husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.6",
