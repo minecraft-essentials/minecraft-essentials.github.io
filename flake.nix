@@ -36,43 +36,20 @@
             inherit inputs pkgs;
             modules = [
               {
-                difftastic.enable = true;
-
-                # Enviroment Virables
-                env = { };
-
-                # https://devenv.sh/reference/options/
+                dotenv.enable = true;
                 packages = with pkgs; [ ] ++ nodejs-packages;
-
-                # https://devenv.sh/scripts/
-                # scripts.hello.exec = "";
-
-                # enterShell = ''
-                # '';
-
-                # https://devenv.sh/languages/
-                languages.javascript = {
-                  enable = true;
-
-                  bun = {
+                languages = {
+                  javascript = {
                     enable = true;
-                    install.enable = true;
+                    bun = {
+                      enable = true;
+                      install.enable = true;
+                    };
+                  };
+                  typescript = {
+                    enable = true;
                   };
                 };
-
-                languages.typescript = {
-                  enable = true;
-                };
-
-                # https://devenv.sh/pre-commit-hooks/
-                pre-commit.hooks = {
-                  nixfmt.package = pkgs.nixfmt-rfc-style;
-                  nixfmt.enable = true;
-                  rome.enable = true;
-                };
-
-                # https://devenv.sh/integrations/dotenv/
-                dotenv.enable = true;
               }
             ];
           };
