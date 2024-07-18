@@ -3,37 +3,32 @@
   "type": "module",
   "version": "0.0.7",
   "scripts": {
-    "dev": "astro dev --bun ",
-    "start": "astro dev --bun ",
-    "build": "astro check --bun && astro build --bun ",
-    "preview": "astro preview --bun ",
-    "astro": "astro --bun ",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
     "fmt": "biome format . --write",
     "lint": "biome lint . --apply",
-    "check": "biome check .",
-    "postinstall": "bunx husky"
+    "check": "biome check ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.6",
-    "@astrojs/react": "^3.0.9",
-    "@astrojs/rss": "^4.0.2",
-    "@astrojs/starlight": "^0.21.0",
-    "@astrojs/starlight-tailwind": "^2.0.1",
-    "@astrojs/tailwind": "^5.1.0",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "astro": "^4.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sharp": "^0.33.2",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "@astrojs/check": "0.8.2",
+    "@astrojs/react": "3.6.0",
+    "@astrojs/starlight": "0.25.1",
+    "@astrojs/starlight-tailwind": "2.0.3",
+    "@astrojs/tailwind": "5.1.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "astro": "4.12.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sharp": "0.33.4",
+    "starlight-blog": "^0.11.0",
+    "tailwindcss": "3.4.6",
+    "typescript": "5.5.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
-    "textlint": "^14.0.3",
-    "textlint-rule-no-todo": "^2.0.1"
+    "@biomejs/biome": "1.8.3"
   }
 }

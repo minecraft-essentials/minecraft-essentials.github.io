@@ -2,6 +2,7 @@ import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,6 +20,16 @@ export default defineConfig({
 		}),
 		starlight({
 			title: "Minecraft-Essentials",
+			plugins: [starlightBlog({
+				authors: {
+					eveeifyeve: {
+						name: "Eveeifyeve",
+						title: "Creator of Minecraft-Essentials",
+						picture: "https://github.com/eveeifyeve.png",
+						url: "https://eveeifyeve.pages.dev",
+					}
+				}
+			})],
 			customCss: ["./src/styles/tailwind.css"],
 			social: {
 				github: "https://github.com/minecraft-essentials/minecraft-essentials",
