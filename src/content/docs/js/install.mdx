@@ -7,13 +7,11 @@ description: How to install the package
 import PackageManagerTabs from "@src/components/docs/PackageMangerTabs.astro";
 
 :::caution
-**This is subjected to CHANGE at any time as this is Experimental**
+**Work In Progress**
 :::
 
 
-
-## Installing Via Your NPM Package Manager
-
+## Installation
 
 <PackageManagerTabs>
   <Fragment slot="npm">
@@ -36,9 +34,9 @@ import PackageManagerTabs from "@src/components/docs/PackageMangerTabs.astro";
   bun add minecraft-essentials
   ```
   </Fragment>
-    <Fragment slot="cargo">
+  <Fragment slot="deno">
   ```shell
-  cargo add minecraft-essentials
+  deno install npm:minecraft-essentials
   ```
   </Fragment>
 </PackageManagerTabs>

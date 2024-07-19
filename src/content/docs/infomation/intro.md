@@ -32,3 +32,8 @@ You can find updates on GitHub at our [Roadmap](https://github.com/orgs/minecraf
 
 
 Our roadmap is easily avavlible on [GitHub](https://github.com/orgs/minecraft-essentials/projects/1)
+
+
+
+# Rust Documentation
+If your looking for the rust documentation you can find it [here](https://docs.rs/minecraft-essentials/)

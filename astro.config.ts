@@ -48,50 +48,17 @@ export default defineConfig({
 					link: "/infomation/intro/",
 				},
 				{
-					label: "Documentation",
+					label: "JS Documentation",
 					items: [
 						{
 							label: "Installation",
-							link: "/guides/install/",
-						},
-						{
-							label: "OAuth",
-							link: "/guides/oauth/",
-							badge: {
-								text: "Recomended!",
-								variant: "success",
-							},
-						},
-						{
-							label: "DeviceCode",
-							link: "/guides/device_code/",
-							badge: {
-								text: "Secure!",
-								variant: "note",
-							},
-						},
-						{
-							label: "Launching",
-							link: "/guides/launching",
-							badge: {
-								text: "Experimental",
-								variant: "caution",
-							},
+							link: "/js/install/",
 						},
 					],
 				},
 				{
-					label: "Resources",
-					items: [
-						{
-							label: "Docs.rs",
-							link: "https://docs.rs/minecraft-essentials/",
-						},
-						{
-							label: "Crates.io",
-							link: "https://crates.io/minecraft-essentials/",
-						},
-					],
+					label: "Rust Documentation",
+					link: "https://docs.rs/minecraft-essentials/",
 				},
 				{
 					label: "Minecraft Clients",
