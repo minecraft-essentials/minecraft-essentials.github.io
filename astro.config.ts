@@ -39,37 +39,12 @@ export default defineConfig({
 				root: {
 					label: "English",
 					lang: "en",
-				},
-				es: {
-					label: "Español",
-				},
-				zh: {
-					label: "中文",
-				},
-				hi: {
-					label: "हिन्दी",
-				},
-				ar: {
-					label: "العربية",
-				},
+				}
 			},
 			sidebar: [
 				{
-					label: "Infomation",
-					items: [
-						{
-							label: "Introduction",
-							link: "/infomation/intro/",
-						},
-						{
-							label: "Contribute",
-							link: "/infomation/contribute/",
-							badge: {
-								text: "Experiemental",
-								variant: "caution",
-							},
-						},
-					],
+					label: "Introduction",
+					link: "/infomation/intro/",
 				},
 				{
 					label: "Documentation",
