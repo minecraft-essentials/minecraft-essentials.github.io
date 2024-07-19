@@ -6,7 +6,7 @@ import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://minecraft-essentials.pages.github.io/",
+	site: "https://minecraft-essentials.github.io/",
 	redirects: {
 		"/docsrs": "https://docs.rs/minecraft-essentials/",
 		"/cratesio": "https://crates.io/minecraft-essentials/",
