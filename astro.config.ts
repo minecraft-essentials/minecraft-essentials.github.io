@@ -21,6 +21,7 @@ export default defineConfig({
 		starlight({
 			title: "Minecraft-Essentials",
 			plugins: [starlightBlog({
+				title: "Minecraft-Essentials Blog",
 				authors: {
 					eveeifyeve: {
 						name: "Eveeifyeve",
@@ -112,6 +113,7 @@ export default defineConfig({
 			],
 			components: {
 				SiteTitle: "./src/components/starlight/SiteTitle.astro",
+				ThemeSelect: "./src/components/starlight/ThemeSelect.astro",
 			},
 		}),
 	],
