@@ -10,7 +10,7 @@ const { js } = Astro.props;
 
 <Tabs group="package-managers">
 	{
-		js && (
+		js ? (
 			<>
 				<TabItem label="Deno">
 					<slot name="deno" />
@@ -26,6 +26,15 @@ const { js } = Astro.props;
 				</TabItem>
 				<TabItem label="npm">
 					<slot name="npm" />
+				</TabItem>
+			</>
+		) : (
+			<>
+				<TabItem label="Pip">
+					<slot name="pip" />
+				</TabItem>
+				<TabItem label="Poetry">
+					<slot name="poetry" />
 				</TabItem>
 			</>
 		)
