@@ -12,19 +12,19 @@ const { js } = Astro.props;
 	{
 		js ? (
 			<>
-				<TabItem label="Deno">
-					<slot name="deno" />
-				</TabItem>
 				<TabItem label="Bun">
 					<slot name="bun" />
+				</TabItem>
+				<TabItem label="Deno">
+					<slot name="deno" />
 				</TabItem>
 				<TabItem label="Yarn">
 					<slot name="yarn" />
 				</TabItem>
-				<TabItem label="pnpm">
+				<TabItem label="Pnpm">
 					<slot name="pnpm" />
 				</TabItem>
-				<TabItem label="npm">
+				<TabItem label="Npm">
 					<slot name="npm" />
 				</TabItem>
 			</>
