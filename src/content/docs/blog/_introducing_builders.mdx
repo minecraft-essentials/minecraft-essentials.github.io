@@ -1,0 +1,32 @@
+---
+title: Introducing Builders!
+description: Introducing Builders for Authentification & Launching Minecraft!
+authors:
+ - Eveeifyeve
+date: 2024-05-18
+---
+
+# Welcome to the new Auth Builders and Launcher Builders!
+
+We are excited to announce the release of the new Auth Builders and Launcher Builders.
+
+These builders make it easier to create Authentication and Launching Minecraft required for your launcher.
+
+Here is a quick example of the auth builder:
+
+```Rust
+
+use minecraft_auth::{AuthenticationBuilder, AuthType, CustomAuthData}
+
+let mut auth = AuthenticationBuilder::builder();
+let client_secret = "keep this secret safe";
+
+auth.of_type(AuthType::Oauth) // Change this to device code if you want to use that
+    .client_id("6a6bf548-5a82-41f5-9451-88b334cdc77")
+    .client_secret(&client_secret)
+    .bedrockrel(Some(false));
+let auth_info = auth.get_info().await;
+println!("Authenifcation get_info {:?}", auth_info);
+
+println!("Authentication info: {:?}", auth.launch().await?);
+```
