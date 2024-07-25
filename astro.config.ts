@@ -50,7 +50,7 @@ export default defineConfig({
 				{
 					label: "JS Documentation",
 					badge: {
-						text: "Work in Progress",
+						text: "WIP",
 						variant: "caution"
 					},
 					items: [
