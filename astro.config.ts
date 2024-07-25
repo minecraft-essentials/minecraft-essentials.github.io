@@ -49,6 +49,10 @@ export default defineConfig({
 				},
 				{
 					label: "JS Documentation",
+					badge: {
+						text: "Work in Progress",
+						variant: "caution"
+					},
 					items: [
 						{
 							label: "Installation",
