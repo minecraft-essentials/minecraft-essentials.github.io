@@ -61,6 +61,19 @@ export default defineConfig({
 					],
 				},
 				{
+					label: "WASM",
+					badge: {
+						text: "WIP",
+						variant: "danger"
+					},
+					items: [
+						{
+							label: "Getting Started",
+							link: "/wasm/getting-started/",
+						},
+					],
+				},
+				{
 					label: "Rust Documentation",
 					link: "https://docs.rs/minecraft-essentials/",
 				},
