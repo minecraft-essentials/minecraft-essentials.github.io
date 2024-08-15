@@ -78,7 +78,7 @@ export default defineConfig({
 					link: "https://docs.rs/minecraft-essentials/",
 				},
 				{
-					label: "Minecraft Clients",
+					label: "Minecraft Modpacks",
 					items: [
 						{
 							label: "TeaClient",

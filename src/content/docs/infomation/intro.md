@@ -4,23 +4,22 @@ title: Introduction
 
 
 ## Why Minecraft-Essentials?
-Minecraft-Essentials started out on a little package that eveeifyeve made called minecraft-auth but he wanted to make minecraft-launch but he said why make two libararys in one so he did so he called it Minecraft-Essentials a goal to provide essentails to Minecraft client developers to build there client and launchers without any hassle.
+Minecraft-Essentials started out on a little package that eveeifyeve made called minecraft-auth but he wanted to make minecraft-launch but he said why make two library's in one so he did so he called it Minecraft-Essentials a goal to provide essentials to Minecraft Modpack developers to provide launch & authentication without any hassle.
 
-## What are we avavlible on?
+## What are we available on?
 
-We are avalible on:
+We are available on:
 
-- NPM
 - Crates.io
 
-**But we are looking to expand out to python and more in the comming versions.**
+**But we are looking to expand out to node & python and more in the coming versions.**
 
 
-## What are the benfits of minecraft essentails 
+## What are the benefits of minecraft essentials    
 
-- Two Major Authenfication Methods.
+- Two Major Authentication Methods.
 - Performance by the power of [Rust](https://rust-lang.org)
-- Launch minecraft by deafult or your own client.
+- Launch minecraft by default or your own Minecraft Modpack.
 - A CLI(Future)
 
 # Where can I find updates on this?
@@ -31,7 +30,7 @@ You can find updates on GitHub at our [Roadmap](https://github.com/orgs/minecraf
 ## Roadmap
 
 
-Our roadmap is easily avavlible on [GitHub](https://github.com/orgs/minecraft-essentials/projects/1)
+Our roadmap is easily available on [GitHub](https://github.com/orgs/minecraft-essentials/projects/1)
 
 
 
