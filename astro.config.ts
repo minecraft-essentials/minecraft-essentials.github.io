@@ -2,7 +2,7 @@ import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import starlightBlog from 'starlight-blog'
+import starlightBlog from "starlight-blog";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,17 +20,19 @@ export default defineConfig({
 		}),
 		starlight({
 			title: "Minecraft-Essentials",
-			plugins: [starlightBlog({
-				title: "Minecraft-Essentials Blog",
-				authors: {
-					eveeifyeve: {
-						name: "Eveeifyeve",
-						title: "Creator of Minecraft-Essentials",
-						picture: "https://github.com/eveeifyeve.png",
-						url: "https://eveeifyeve.pages.dev",
-					}
-				}
-			})],
+			plugins: [
+				starlightBlog({
+					title: "Minecraft-Essentials Blog",
+					authors: {
+						eveeifyeve: {
+							name: "Eveeifyeve",
+							title: "Creator of Minecraft-Essentials",
+							picture: "https://github.com/eveeifyeve.png",
+							url: "https://eveeifyeve.pages.dev",
+						},
+					},
+				}),
+			],
 			customCss: ["./src/styles/tailwind.css"],
 			social: {
 				github: "https://github.com/minecraft-essentials/minecraft-essentials",
@@ -40,7 +42,7 @@ export default defineConfig({
 				root: {
 					label: "English",
 					lang: "en",
-				}
+				},
 			},
 			sidebar: [
 				{
@@ -51,7 +53,7 @@ export default defineConfig({
 					label: "JS Documentation",
 					badge: {
 						text: "WIP",
-						variant: "caution"
+						variant: "caution",
 					},
 					items: [
 						{
@@ -64,7 +66,7 @@ export default defineConfig({
 					label: "WASM",
 					badge: {
 						text: "WIP",
-						variant: "danger"
+						variant: "danger",
 					},
 					items: [
 						{

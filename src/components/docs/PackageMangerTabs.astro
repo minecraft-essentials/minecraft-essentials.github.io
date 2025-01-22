@@ -9,34 +9,34 @@ const { js } = Astro.props;
 ---
 
 <Tabs group="package-managers">
-	{
-		js ? (
-			<>
-				<TabItem label="Bun">
-					<slot name="bun" />
-				</TabItem>
-				<TabItem label="Deno">
-					<slot name="deno" />
-				</TabItem>
-				<TabItem label="Yarn">
-					<slot name="yarn" />
-				</TabItem>
-				<TabItem label="Pnpm">
-					<slot name="pnpm" />
-				</TabItem>
-				<TabItem label="Npm">
-					<slot name="npm" />
-				</TabItem>
-			</>
-		) : (
-			<>
-				<TabItem label="Pip">
-					<slot name="pip" />
-				</TabItem>
-				<TabItem label="Poetry">
-					<slot name="poetry" />
-				</TabItem>
-			</>
-		)
-	}
+  {
+    js ? (
+      <>
+        <TabItem label="Bun">
+          <slot name="bun" />
+        </TabItem>
+        <TabItem label="Deno">
+          <slot name="deno" />
+        </TabItem>
+        <TabItem label="Yarn">
+          <slot name="yarn" />
+        </TabItem>
+        <TabItem label="Pnpm">
+          <slot name="pnpm" />
+        </TabItem>
+        <TabItem label="Npm">
+          <slot name="npm" />
+        </TabItem>
+      </>
+    ) : (
+      <>
+        <TabItem label="Pip">
+          <slot name="pip" />
+        </TabItem>
+        <TabItem label="Poetry">
+          <slot name="poetry" />
+        </TabItem>
+      </>
+    )
+  }
 </Tabs>

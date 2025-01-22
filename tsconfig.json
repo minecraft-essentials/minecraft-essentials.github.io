@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
-    "noEmit": true,
-    "target": "ES2022",
-    "jsx": "react-jsx",
-    "paths": {
-      "@src/*": ["/src/*"]
-    }
-  },
-  "extends": "astro/tsconfigs/strictest",
-  "include": ["src/*"]
+	"compilerOptions": {
+		"noEmit": true,
+		"target": "ES2022",
+		"jsx": "react-jsx",
+		"paths": {
+			"@src/*": ["/src/*"]
+		}
+	},
+	"extends": "astro/tsconfigs/strictest",
+	"include": ["src/*"]
 }
