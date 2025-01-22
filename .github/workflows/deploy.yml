@@ -12,6 +12,12 @@ permissions:
   id-token: write
 
 jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: dprint/check@v2.2
   build:
     runs-on: ubuntu-latest
     steps:
