@@ -20,6 +20,7 @@ jobs:
       - uses: dprint/check@v2.2
   build:
     runs-on: ubuntu-latest
+    needs: style
     steps:
       - uses: actions/checkout@v4
       - name: Install & Build Website
@@ -29,8 +30,8 @@ jobs:
             package-manager: bun@latest
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
