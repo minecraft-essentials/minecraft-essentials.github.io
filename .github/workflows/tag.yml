@@ -12,6 +12,7 @@ jobs:
 
   tag:
     runs-on: ubuntu-latest
+    needs: style
     steps:
     - uses: actions/checkout@v2
       with:
@@ -23,3 +24,9 @@ jobs:
         BRANCH_HISTORY: last
         WITH_V: true
         PRERELEASE: true
+
+        # Versions commit messages
+        MAJOR_STRING_TOKEN: "feat(major):"
+        MINOR_STRING_TOKEN: "feat(minor):"
+        PATCH_STRING_TOKEN: "feat(patch):"
+        NONE_STRING_TOKEN: "feat:"
