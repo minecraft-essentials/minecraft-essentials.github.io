@@ -80,20 +80,8 @@ export default defineConfig({
 					link: "https://docs.rs/minecraft-essentials/",
 				},
 				{
-					label: "Minecraft Modpacks",
+					label: "Projects that use minecraft-essentials",
 					items: [
-						{
-							label: "TeaClient",
-							link: "https://teaclient.net",
-							badge: {
-								text: "Featured!",
-								variant: "default",
-							},
-						},
-						{
-							label: "OpusClient",
-							link: "https://opusclient.com",
-						},
 					],
 				},
 			],
