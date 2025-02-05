@@ -81,8 +81,7 @@ export default defineConfig({
 				},
 				{
 					label: "Projects that use minecraft-essentials",
-					items: [
-					],
+					items: [],
 				},
 			],
 			components: {
