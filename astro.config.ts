@@ -81,7 +81,12 @@ export default defineConfig({
 				},
 				{
 					label: "Projects that use minecraft-essentials",
-					items: [],
+					items: [
+						{
+							label: "Decent-Client Launcher"
+							link: "https://github.com/decent-client/launcher"
+						}
+					],
 				},
 			],
 			components: {
