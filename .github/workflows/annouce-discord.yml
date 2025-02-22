@@ -15,7 +15,7 @@ jobs:
           color: '15299076'
           content: | 
             ||@everyone||
-            '# Minecraft Essentails Website Update:'
+            # Minecraft Essentails Website Update:
             Now available at https://minecraft-essentials.github.io/
           footer_timestamp: true
           max_description: '4096'
