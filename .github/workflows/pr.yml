@@ -2,8 +2,8 @@ name: Check pr
 
 on:
   pull_request:
-    - branches: ["main"]
-
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
