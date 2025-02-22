@@ -4,7 +4,7 @@ title: Introduction
 
 ## Why Minecraft-Essentials?
 
-Minecraft-Essentials started out on a little package that eveeifyeve made called minecraft-auth but he wanted to make minecraft-launch but he said why make two library's in one so he did so he called it Minecraft-Essentials a goal to provide essentials to Minecraft Modpack developers to provide launch & authentication without any hassle.
+Minecraft-Essentials started out on a little package that eveeifyeve made called minecraft-auth but he wanted to make minecraft-launch but he said why make two library's in one so he did so he called it Minecraft-Essentials a goal to provide essentials to Minecraft Client Launcher developers to provide launch & authentication without any hassle.
 
 ## What are we available on?
 
@@ -18,7 +18,7 @@ We are available on:
 
 - Two Major Authentication Methods.
 - Performance by the power of [Rust](https://rust-lang.org)
-- Launch minecraft by default or your own Minecraft Modpack.
+- Launch minecraft by default or your own Minecraft Client.
 - A CLI(Future)
 
 # Where can I find updates on this?
